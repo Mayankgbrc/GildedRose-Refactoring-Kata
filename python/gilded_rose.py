@@ -45,6 +45,7 @@ class GildedRose(object):
                     self.decrease_quality(item, 2)
                     if item.sell_in < 1:
                         self.decrease_quality(item, 2)
+                    item.quality = max(0, item.quality)
                     
 
                 else:
